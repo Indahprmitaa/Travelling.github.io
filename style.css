@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(149, 227, 247);
+}
+
+.nav {
+  position: fixed;
+  background-color: rgb(149, 227, 247);
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.nav ul li a:hover {
+  background-color: rgb(149, 227, 247);
+  color: #fff;
+  border: 4px;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#landing h1 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  left: 200px;
+  font-size: 120px;
+  color: rgb(8, 7, 12);
+  text-align: center;
+}
+
+.focus-img {
+  z-index: 2;
+}
+
+.mid-img {
+  z-index: 3;
+}
+.last-img {
+  z-index: 5;
+}
+.bird-img {
+  z-index: 6;
+}
+
+.btn {
+  position: absolute;
+  top: 80%;
+  z-index: 9;
+  margin: 0 auto;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: rgb(14, 15, 99);
+  color: #fff;
+  font-size: 25px;
+}
+#landing::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgb(149, 227, 247), transparent);
+  z-index: 6;
+}
+
+#about {
+  padding: 70px 0;
+  line-height: 25px;
+  color: rgb(19, 15, 15);
+  background-color: rgb(149, 227, 247);
+}
+
+.content {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content hr {
+  width: 30%;
+  border: 1px solid;
+  text-align: center;
+  display: inline-block;
+}
+
+.content p {
+  text-indent: 100px;
+}
